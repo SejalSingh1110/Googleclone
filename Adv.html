@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+  </head>
+  <style>
+    h2 {
+      font-size: 20px;
+      margin: 20px;
+    }
+
+    .box {
+      margin: 20px;
+      padding: 5px;
+    }
+
+    input[type="text"] {
+      height: 30px;
+      width: 600px;
+    }
+    label {
+      font-size: 18px;
+    }
+    input[type="submit"] {
+    }
+    input[type="submit"] {
+      height: 50px;
+      width: 200px;
+      background-color: Green;
+      font-size: 20px;
+    }
+    #link {
+            
+            text-align: right;
+            font-size: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #link a:hover{
+            color:grey;
+    
+        }
+  </style>
+  <body>
+    <div id="link">
+        <a href="index.html">Image search</a><br>
+        <a href="search.html">Google search</a>
+           
+    </div>
+    <div class="container">
+      <form action="https://www.google.co.in/search">
+        <h2>Find pages with...</h2>
+        <div class="box">
+          <label for="one">all these words:</label>
+          <input type="text" name="as_q" />
+        </div>
+        <div class="box">
+          <label for="two">this exact word or phrase:</label>
+          <input type="text" name="as_q" />
+        </div>
+        <div class="box">
+          <label for="three">any of these words:</label>
+          <input type="text" name="as_q" />
+        </div>
+        <div class="box">
+          <label for="four">none of these words:</label>
+          <input type="text" name="as_q" />
+        </div>
+        <div class="box">
+          <input type="submit" value="Advanced Search" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
